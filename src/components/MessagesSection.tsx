@@ -16,21 +16,21 @@ const messages: Message[] = [
     name: "Francis Atwoli",
     role: "Secretary-General, COTU",
     message: "On this Labor Day, we celebrate the hard-working Kenyans who continue to build our nation. Your dedication, resilience and determination are the foundation of our country's progress.",
-    image: "/placeholder.svg"
+    image: "/leader-images/francis-atwoli.jpg"
   },
   {
     id: 2,
     name: "Dr. Rebecca Miano",
     role: "Cabinet Secretary, Ministry of Labor",
     message: "Today we honor the extraordinary contributions of Kenya's workforce. The government remains committed to improving working conditions and creating more opportunities for all Kenyans.",
-    image: "/placeholder.svg"
+    image: "/leader-images/rebecca-miano.jpg"
   },
   {
     id: 3,
     name: "Dr. Wilfred Marube",
     role: "Federation of Kenya Employers",
     message: "Employers across Kenya recognize the vital partnership between businesses and workers. Together, we can build a more prosperous Kenya with decent work and economic growth for all.",
-    image: "/placeholder.svg"
+    image: "/leader-images/wilfred-marube.jpg"
   }
 ];
 
