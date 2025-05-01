@@ -4,4 +4,4 @@
 
 [live Demo](https://kazi-day-vibes-kenya.vercel.app/)
 
-![preview](/images/preview.png)
+![preview](./public/images/preview.png)
