@@ -9,7 +9,7 @@ const Header = () => {
   
   const togglePlayback = () => {
     if (!audioRef[0]) {
-      const audio = new Audio("/kenya.mp3");
+      const audio = new Audio("/audio/kenya.mp3");
       audioRef[0] = audio;
     }
     
