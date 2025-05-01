@@ -9,41 +9,41 @@ interface GalleryImage {
   aspectRatio: "square" | "portrait" | "landscape";
 }
 
-// Placeholder images would be replaced with actual Labor Day celebration images
+// Gallery images using local files that will be placed in the public/images folder
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "/photo-1605810230434-7631ac76ec81",
+    src: "/images/labor_day_1.jpg",
     alt: "Labor Day celebration in Nairobi",
     aspectRatio: "landscape"
   },
   {
     id: 2,
-    src: "/photo-1519389950473-47ba0277781c",
+    src: "/images/labor_day_2.jpg",
     alt: "Workers celebration in Kenya",
     aspectRatio: "landscape"
   },
   {
     id: 3,
-    src: "/photo-1581091226825-a6a2a5aee158",
+    src: "/images/labor_day_3.jpg",
     alt: "Kenya Labor Day parade",
     aspectRatio: "portrait"
   },
   {
     id: 4,
-    src: "/photo-1605810230434-7631ac76ec81",
+    src: "/images/labor_day_4.jpg",
     alt: "Labor union members at celebration",
     aspectRatio: "square"
   },
   {
     id: 5,
-    src: "/photo-1519389950473-47ba0277781c",
+    src: "/images/labor_day_5.jpg",
     alt: "Community event for Labor Day",
     aspectRatio: "landscape"
   },
   {
     id: 6,
-    src: "/photo-1581091226825-a6a2a5aee158",
+    src: "/images/labor_day_6.jpg",
     alt: "Cultural performance at Labor Day event",
     aspectRatio: "square"
   }
