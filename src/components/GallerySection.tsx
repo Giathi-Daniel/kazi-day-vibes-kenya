@@ -15,25 +15,25 @@ const galleryImages: GalleryImage[] = [
     id: 1,
     src: "/images/labor_day_1.jpg",
     alt: "Labor Day celebration in Nairobi",
-    aspectRatio: "portrait"
+    aspectRatio: "landscape"
   },
   {
     id: 2,
     src: "/images/labor_day_2.jpg",
     alt: "Workers celebration in Kenya",
-    aspectRatio: "portrait"
+    aspectRatio: "landscape"
   },
   {
     id: 3,
     src: "/images/labor_day_3.jpg",
     alt: "Kenya Labor Day parade",
-    aspectRatio: "portrait"
+    aspectRatio: "landscape"
   },
   {
     id: 4,
     src: "/images/labor_day_4.jpg",
     alt: "Labor union members at celebration",
-    aspectRatio: "square"
+    aspectRatio: "landscape"
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const galleryImages: GalleryImage[] = [
     id: 6,
     src: "/images/labor_day_6.jpg",
     alt: "Cultural performance at Labor Day event",
-    aspectRatio: "square"
+    aspectRatio: "landscape"
   }
 ];
 
