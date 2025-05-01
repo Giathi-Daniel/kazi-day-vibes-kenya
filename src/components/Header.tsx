@@ -1,27 +1,37 @@
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Music } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useState<HTMLAudioElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  
+  useEffect(() => {
+    // Create audio element on component mount
+    audioRef.current = new Audio("/audio/kenya.mp3");
+    
+    // Cleanup function to pause and release audio when component unmounts
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
   
   const togglePlayback = () => {
-    if (!audioRef[0]) {
-      const audio = new Audio("/audio/kenya.mp3");
-      audioRef[0] = audio;
-    }
+    if (!audioRef.current) return;
     
     if (isPlaying) {
-      audioRef[0].pause();
+      audioRef.current.pause();
+      setIsPlaying(false);
     } else {
-      audioRef[0].play().catch(error => {
+      audioRef.current.play().catch(error => {
         console.error("Audio playback failed:", error);
       });
+      setIsPlaying(true);
     }
-    
-    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -40,7 +50,11 @@ const Header = () => {
             className="text-kenya-white hover:text-kenya-red transition-colors" 
             onClick={togglePlayback}
           >
-            <Music className="mr-2 h-4 w-4" />
+            {isPlaying ? (
+              <Pause className="mr-2 h-4 w-4" />
+            ) : (
+              <Play className="mr-2 h-4 w-4" />
+            )}
             {isPlaying ? "Pause Music" : "Play Music"}
           </Button>
         </nav>
