@@ -15,13 +15,13 @@ const galleryImages: GalleryImage[] = [
     id: 1,
     src: "/images/labor_day_1.jpg",
     alt: "Labor Day celebration in Nairobi",
-    aspectRatio: "landscape"
+    aspectRatio: "portrait"
   },
   {
     id: 2,
     src: "/images/labor_day_2.jpg",
     alt: "Workers celebration in Kenya",
-    aspectRatio: "landscape"
+    aspectRatio: "portrait"
   },
   {
     id: 3,
