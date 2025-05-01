@@ -30,7 +30,7 @@ const Hero = () => {
             <Button size="lg" className="bg-kenya-green hover:bg-kenya-green/90 text-white">
               View Schedule
             </Button>
-            <Button size="lg" variant="outline" className="border-kenya-white text-kenya-white hover:bg-kenya-white/10">
+            <Button size="lg" variant="outline" className="border-kenya-white text-kenya-green hover:bg-kenya-white/10">
               Learn More
             </Button>
           </div>
