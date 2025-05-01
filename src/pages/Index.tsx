@@ -1,4 +1,4 @@
-
+import { Analytics } from "@vercel/analytics/react"
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
